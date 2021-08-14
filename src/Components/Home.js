@@ -2,7 +2,7 @@ import React from 'react'
 import Searchbar from './Searchbar'
 
 
-function Body() {
+function Home() {
     return (
         <div>
             <Searchbar />
@@ -10,4 +10,4 @@ function Body() {
     )
 }
 
-export default Body
+export default Home

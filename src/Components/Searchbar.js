@@ -1,4 +1,8 @@
 import React from 'react'
+import {     
+    Link
+  } from "react-router-dom";
+
 import styled from 'styled-components'
 
 function Searchbar() {
@@ -8,7 +12,8 @@ function Searchbar() {
 
             <SearchTab>
                  <Search type="text" placeholder="Search.."/>
-                 <Button>Search</Button>
+                 <Link to="/booking"> <Button >Search</Button></Link>
+                
             </SearchTab>
         </TopBody>
     )
@@ -30,9 +35,6 @@ const H1 = styled.h1`
 `
 const SearchTab = styled.div`
     text-align: center;   
-    
-    
-    
   
 `
 
