@@ -9,19 +9,19 @@ function BookingBottomNav() {
     return (
         <>
             <NavBar>
-                <ConfirmBooking>
-                <Link to="/resigtration">   
+                <Save>
+                <Link to="/">   
                 <img src="https://www.figma.com/file/TYMBLtZWY3mKDvr1blAToK/neostar-platform?node-id=5%3A1721"/>
-                <label>Confirm Booking</label>
+                <label>Save</label>
                 </Link>
-                </ConfirmBooking>
+                </Save>
                 <Divide>
                 |
                 </Divide>
-                <Cancel>
+                <Discard>
                 <img src="https://www.figma.com/file/TYMBLtZWY3mKDvr1blAToK/neostar-platform?node-id=5%3A1742"/>
-                <label>Cancel</label>
-                </Cancel>
+                <label>Discard</label>
+                </Discard>
 
             </NavBar>
         </>
@@ -45,9 +45,10 @@ const NavBar = styled.div`
     width: 100%;
     display: flex;
 `
-const ConfirmBooking = styled.div`
+const Save = styled.div`
     
     margin-right: auto;
+    margin-left: auto;
     img{
         padding-right:10px;
         margin: 15px 0 0 10px;        
@@ -55,12 +56,14 @@ const ConfirmBooking = styled.div`
 `
 const Divide = styled.div`
 margin-top: -6px;
-margin-left: -30px;
+margin-right: auto;
+margin-left: auto;
 font-size: 40px;
 font-weight: 400;
 `
-const Cancel = styled.div`
+const Discard = styled.div`
 margin-right: auto;
+margin-left: auto;
 img{
     padding-right:10px;
     margin: 15px 0px 0 30px;        

@@ -7,8 +7,9 @@ import {
 } from "react-router-dom";
 
 import Header from './Components/Header';
-import Home from './Components/Home'
-import Booking from './Components/Booking'
+import Home from './Components/pages/Home'
+import Booking from './Components/pages/Booking'
+import Resigtration from './Components/pages/Resigtration'
 
 
 function App() {
@@ -17,6 +18,10 @@ function App() {
     <div className="App">
     <Header/>  
     <Switch>
+
+    <Route path="/resigtration">
+        <Resigtration />
+      </Route>
 
       <Route path="/booking">
         <Booking />

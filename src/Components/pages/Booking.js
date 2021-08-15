@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import {DateTimePickerComponent} from '@syncfusion/ej2-react-calendars';
-import BookingBottomNav from './BookingBottomNav'
+import BookingBottomNav from '../BookingBottomNav'
 
 function Booking() {
     const dateValue = new Date("02/05/2021 10:30 AM");
