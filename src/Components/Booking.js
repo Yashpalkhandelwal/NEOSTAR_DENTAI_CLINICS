@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import {DateTimePickerComponent} from '@syncfusion/ej2-react-calendars';
+import BookingBottomNav from './BookingBottomNav'
 
 function Booking() {
     const dateValue = new Date("02/05/2021 10:30 AM");
@@ -86,6 +87,8 @@ function Booking() {
 
             </Tearmsandcondition>
             </form>
+
+            <BookingBottomNav/>
 
             </div>
     )
@@ -191,18 +194,23 @@ const ProblemSecond = styled.div`
     order: 2;    
 `
 const ProblemOne = styled.div`
+    padding-bottom:5px;
 ` 
 const ProblemTwo = styled.div`
+    padding-bottom:5px;
 
 ` 
 const ProblemThree = styled.div`
+    padding-bottom:5px;
 ` 
 const ProblemFoure = styled.div`
+    padding-bottom:5px;
 ` 
 
 const Tearmsandcondition = styled.div`
     align-items: center;
     text-align: center;   
+    margin-bottom:10px;
     label{
         padding-left:5px;
         letter-spacing: 2px;
