@@ -14,7 +14,7 @@ function Booking() {
                 <img src="https://img.freepik.com/free-vector/city-map-background-blue-tone_99087-101.jpg?size=626&ext=jpg"/>
             </Map>
             <InputClinic>
-                <label for="dog-names">City & Clinic</label>
+                <label>City & Clinic</label>
                     <select name="Current">
                         <option value=""></option>
                         <option value="area2">area2</option>
@@ -24,7 +24,7 @@ function Booking() {
             </InputClinic>           
             </Clinics>
              <Calender>   
-                 <label for="dog-names">Date and Time</label>
+                 <label>Date and Time</label>
                  <Calenderdateandtime>
                     <DateTimePickerComponent 
                         placeholder="Choose a date and time"
@@ -38,6 +38,53 @@ function Booking() {
                     </DateTimePickerComponent>
                     </Calenderdateandtime>
             </Calender>
+            <ProblemDescription>
+                <label>Problem Description</label>
+                <Problem>
+                <ProblemFisrt>
+                    <ProblemOne>
+                    <input type="checkbox"/>
+                        Problem 1
+                    </ProblemOne>
+                    <ProblemTwo>
+                    <input type="checkbox"/>
+                        Problem 2
+                    </ProblemTwo>
+                    <ProblemThree>
+                    <input type="checkbox"/>
+                        Problem 3
+                    </ProblemThree>
+                    <ProblemFoure>
+                    <input type="checkbox"/>
+                        Problem 4
+                    </ProblemFoure>
+                </ProblemFisrt>
+                <ProblemSecond>
+                    <ProblemOne>
+                    Problem 5<input type="checkbox"/>
+                        
+                    </ProblemOne>
+                    <ProblemTwo>
+                    Problem 6<input type="checkbox"/>
+                       
+                    </ProblemTwo>
+                    <ProblemThree>
+                    Problem 7<input type="checkbox"/>
+                       
+                    </ProblemThree>
+                    <ProblemFoure>
+                    Problem 8<input type="checkbox"/>
+                       
+                    </ProblemFoure>
+                </ProblemSecond>
+                </Problem>
+                    <textarea rows="4" cols="50" placeholder="Tell us something about your problem to better treat you..."/>
+
+            </ProblemDescription>
+            <Tearmsandcondition>
+            <input type="checkbox"/><label>By booking an appointment through us you agree to give consent for treatment (if taken) to NeoStar.</label>
+
+            </Tearmsandcondition>
             </form>
 
             </div>
@@ -74,7 +121,7 @@ const InputClinic = styled.div`
         width: 100%;
         padding-top: 10px;
      label {
-        font-weight: 600;
+        font-weight: 700;
          margin-right: 10px;
      }
      select{
@@ -89,19 +136,18 @@ const InputClinic = styled.div`
     
 `
 const Calender = styled.div`
+     
      margin: 10px 30px;
      label {
-         padding-left:10px;
+         padding-left:19px;
          margin-top: 10px;
-         font-weight: 600;
+         font-weight: 700;
          margin-right: 10px;
      }
-
-     DateTimePickerComponent{
-        
-     }
+    
 `
 const Calenderdateandtime = styled.div`
+     
     margin-top: 4px;
     display: flex;
     align-items: center;
@@ -110,4 +156,59 @@ const Calenderdateandtime = styled.div`
     padding: 5px 20px;
     border-radius: 12px;
     height: 70px;
+`
+
+const ProblemDescription = styled.div`
+    display: grid;
+    margin: 10px 30px;
+    label {
+        padding-left:19px;
+        margin-top: 10px;
+        font-weight: 700;
+        margin-right: 10px;
+    }
+    textarea{
+        background: #FFF8F2;
+        border: 1px soild black;    
+        height: 90px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        border:1px solid #eaeaea;
+        border-radius: 5px;
+        outline:none;
+    }
+
+`
+const Problem = styled.div`
+    display: flex;
+    padding: 20px;    
+`
+const ProblemFisrt = styled.div`
+`
+const ProblemSecond = styled.div`
+    margin-left: auto;
+    order: 2;    
+`
+const ProblemOne = styled.div`
+` 
+const ProblemTwo = styled.div`
+
+` 
+const ProblemThree = styled.div`
+` 
+const ProblemFoure = styled.div`
+` 
+
+const Tearmsandcondition = styled.div`
+    align-items: center;
+    text-align: center;   
+    label{
+        padding-left:5px;
+        letter-spacing: 2px;
+        font-size: 9px;
+    }
+    input{
+       margin-left:5px;
+    }
 `
