@@ -31,6 +31,7 @@ function BookingBottomNav() {
 export default BookingBottomNav
 
 const NavBar = styled.div`
+    bottom: 0;
     padding:5px;
     font-weight: 700;
     color: white;
@@ -41,7 +42,7 @@ const NavBar = styled.div`
     overflow: hidden;
     background-color: #048B90;
     position: sticky;
-    bottom: 0;
+    
     width: 100%;
     display: flex;
 `

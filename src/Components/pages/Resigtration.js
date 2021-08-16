@@ -56,16 +56,16 @@ function Resigtration() {
                 </ValueGender>
                     </Gender>
                     </ColTwo>
-                    <PrimeNumber>
+                <EmailAddress>
                     <label>Email Address</label>
                     <input type="text" placeholder="Email Address"/>
-                 </PrimeNumber>
-                 <PrimeNumber>
+                 </EmailAddress>
+                 <ReferalCode>
                     <label>Referal Code</label>
                     <input type="text" placeholder="Referal Code"/>
-                 </PrimeNumber>
+                 </ReferalCode>
                  <Problem>
-               
+                    <label>Do your have any problem related to these?</label>
                     <ProblemOne>
                     <input type="checkbox" Class="checkbox"/>
                     Blood Pressure
@@ -103,218 +103,173 @@ export default Resigtration
 
 
 const Form = styled.div`
-overflow: hidden;
-    display:grid;
-    text-align: center;   
-    margin-top: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    flex-direction: column ;
+    justify-content: space-evenly;
+    align-items:flex-start ;
+
+    label{
+        padding-bottom:7px;
+        font-size:16px;
+        font-weight:700;
+    }
 
     input{
-        background: #FFF8F2;
-        margin-right: 10px;    
+        background: #FFF8F2;    
         border: none;    
-        height: 53px;
-        margin-left: auto;
-        margin-right: auto;
+        height: 53px;            
         width: 319px;
         border:1px solid #eaeaea;
         border-radius: 5px;
-        outline:none;
-    }
-    
-    &:focus{
-        border-color:#048B90;
-    }
-    
-    `
-    const Name = styled.div`
-    display:grid;
-
-    label {
+        outline:none;       
         
-        text-align: left;   
-        margin-left:42px;
-        margin-top: 30px;
-        margin-bottom: 7px;
-        font-weight: 700;
-        margin-right: 10px;
-    }
+        &:focus{
+            border-color:#048B90;
+        }
+
+
+    `
+const Name = styled.div`
+        display: flex;
+        flex-flow: column wrap;
+        flex-direction: column ;
+        padding:30px;     
+
+
+            
+            
+        }
     `
 
-    const PhoneNumber = styled.div`
-    display:grid;
+const PhoneNumber = styled.div`
+        display: flex;
+        flex-flow: column wrap;
+        flex-direction: column ;
+       
 
-    label {
-        text-align: left;   
-        margin-left:42px;
-        margin-top: 30px;
-        margin-bottom: 7px;
-        font-weight: 700;
-        margin-right: 10px;
-    }
     `
 
-    const PrimeNumber = styled.div`
-    display:grid;
-
-    label {
-        
-        text-align: left;   
-        margin-left:42px;
-        margin-top: 30px;
-        margin-bottom: 7px;
-        font-weight: 700;
-        margin-right: 10px;
-    }`
+const PrimeNumber = styled.div`
+display: flex;
+flex-flow: column wrap;
+flex-direction: column ;
+padding:0 30px;
+    `
 
     
 
-    const Whatsapp = styled.div`
+const Whatsapp = styled.div`
+    left:0
+    display: flex;
+    flex-flow: column wrap;
+    flex-direction: column ;
+    padding: 0 30px;
     
+    
+    `
 
-    label {
-        
-        text-align: left;   
-        margin-left:42px;
-        margin-top: 30px;
-        margin-bottom: 7px;
-        font-weight: 700;
-        margin-right: 10px;
+const WhatsappCheckBox = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top:30px; 
+    label{
+        height:8px;
+        width:180px;
     }
-
     input.checkbox{
-        background: #FFF8F2;
-        margin-right: 10px;    
-        border: none;    
-        height: 15px;
-        margin-left: auto;
-        margin-right: auto;        
-        border:1px solid #eaeaea;
-        border-radius: 5px;
-        outline:none;
+        height:20px;
+        width:20px;
+    }
+    p{
+        font-size:10px;
+        padding:0;
     }
 
-    `
-
-    const WhatsappCheckBox = styled.div`
-    display:grid;
-    grid-template-rows: 22px ;
-    grid-gap: 10px;
-    label {        
-        float:left        
-        text-align: center;        
-        margin-top: 30px;
-        margin-bottom: 7px;
-        font-weight: 700;
-        margin-right: 10px;
-    }
-    p{        
-         font-size: 12px;
-         margin-top:-30px;
-         margin-right:-150px;
-    }
-   
-    
     ` 
 
-    const ColTwo = styled.div`
-
+const ColTwo = styled.div`
+    display: flex;
+        flex-flow: row wrap;
+        flex-direction: row ;
     `
-    const Dob = styled.div`
-    display:grid;
-    margin-left: auto;
-    margin-right: auto;
-    label {
-        
-        text-align: left;   
-        margin-left:42px;
-        margin-top: 30px;
-        margin-bottom: 7px;
-        font-weight: 700;
-        margin-right: 10px;
-    }
-    input {
-        background: #FFF8F2;
-        margin-right: 10px;    
-        border: none;    
-        height: 70px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 126px;
-        border:1px solid #eaeaea;
-        border-radius: 5px;
-        outline:none;
-    }
+const Dob = styled.div`
+left:0
+display: flex;
+flex-flow: column wrap;
+flex-direction: column ;
+padding: 30px;
+
 
     `
 
-    const Calenderdateandtime = styled.div`
-    margin-top: 4px;    
-    background: #FFF8F2;
-    padding: 5px 20px;
-    border-radius: 12px;
-    height: 53px;
-    width:183px;
-    margin-left:40px;
+const Calenderdateandtime = styled.div`
+
 `
 const ValueGender = styled.div`
-padding-top:10px;   
-    
-`
-const Gender = styled.div`
-   
-    margin-top:-85px;
-    margin-right:-199px;
-
-    label {
-        
-          
-        margin-left:-45px;
-        margin-top: 30px;
-        margin-bottom: 7px;
-        font-weight: 700;
-        margin-right: 10px;
-    }
-
 select{
-    
-    background: #FFF8F2;
+    background: #FFF8F2;  
     width:126px; 
     border: none;    
-    height: 53px;
+    height: 40px;
     border-radius: 9px;
     option {
         text-align: center;
-    }`
-
-    const Problem = styled.div`
-    display : flex;
-    flex-direction: column  ; 
-    justify-content: : space-evenly;
-    input.checkbox{
-        background: #FFF8F2;
-        margin-right: 10px;    
-        border: none;    
-        height: 15px;
-        margin-left: auto;
-        margin-right: auto;        
-        border:1px solid #eaeaea;
-        border-radius: 5px;
-        outline:none;
     }
+    
+`
+const Gender = styled.div`
+padding: 30px;
+`
+const EmailAddress = styled.div`
+display: flex;
+        flex-flow: column wrap;
+        flex-direction: column ;
+        padding:0 30px;   
+`
+const ReferalCode = styled.div`
+display: flex;
+        flex-flow: column wrap;
+        flex-direction: column ;
+        padding:30px;   
+`
+const Problem = styled.div`
+    display: flex;
+    flex-flow: column wrap;
+    flex-direction: row ;
+    padding: 0 30px;
+    
     
 `
 
 
 const ProblemOne = styled.div`
-    
+    padding-right:9px;
+    input.checkbox{
+    height:20px;
+    width:20px;
+}
 ` 
 const ProblemTwo = styled.div`
-   
+    padding-right:9px;
+    input.checkbox{
+    height:20px;
+    width:20px;
+}
 
 ` 
 const ProblemThree = styled.div`
-   
+    padding-right:9px;
+    input.checkbox{
+    height:20px;
+    width:20px;
+}
 ` 
 const ProblemFoure = styled.div`
-   
+    padding:10px 9px 10px;    
+    input.checkbox{
+    height:20px;
+    width:20px;
+}
 ` 
