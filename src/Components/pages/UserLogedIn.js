@@ -163,6 +163,8 @@ const AppointmentConfirmation = styled.div`
     font-weight:700;   
     text-align: center;     
     margin:5px 0 0 0 ;    
+    color:white;
+    padding-top:1px
     `
 
 
