@@ -10,6 +10,7 @@ import Header from './Components/Header';
 import Home from './Components/pages/Home'
 import Booking from './Components/pages/Booking'
 import Resigtration from './Components/pages/Resigtration'
+import UserLogedIn from './Components/pages/UserLogedIn'
 
 
 function App() {
@@ -18,6 +19,10 @@ function App() {
     <div className="App">
     <Header/>  
     <Switch>
+
+    <Route path="/UserLogedIn">
+        <UserLogedIn />
+      </Route>
 
     <Route path="/resigtration">
         <Resigtration />

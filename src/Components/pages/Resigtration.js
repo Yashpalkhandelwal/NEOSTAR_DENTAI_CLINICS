@@ -31,7 +31,7 @@ function Resigtration() {
                  <ColTwo>
                  <Dob>
                  <label>DOB</label>
-                 <Calenderdateandtime>                
+                 <DobDate>                
                     <DatePickerComponent 
                         placeholder="Choose a date and time"
                         value={dateValue}
@@ -42,7 +42,7 @@ function Resigtration() {
                         background="#FFF8F2">
 
                     </DatePickerComponent>
-                    </Calenderdateandtime>
+                    </DobDate>
                     
                     </Dob>
                     <Gender>
@@ -195,22 +195,23 @@ const ColTwo = styled.div`
         flex-direction: row ;
     `
 const Dob = styled.div`
-left:0
-display: flex;
-flex-flow: column wrap;
-flex-direction: column ;
-padding: 30px;
+    left:0
+    display: flex;
+    flex-flow: column wrap;
+    flex-direction: column ;
+    padding: 30px;
 
 
     `
 
-const Calenderdateandtime = styled.div`
+const DobDate = styled.div`
+    width:120px;
 
 `
 const ValueGender = styled.div`
 select{
     background: #FFF8F2;  
-    width:126px; 
+    width:120px; 
     border: none;    
     height: 40px;
     border-radius: 9px;

@@ -44,6 +44,10 @@ const NavBar = styled.div`
     bottom: 0;
     width: 100%;
     display: flex;
+    a{
+        text-decoration: none;
+        color: White;
+    }
 `
 const ConfirmBooking = styled.div`
     

@@ -1,16 +1,25 @@
 import React from 'react'
-
+import {     
+    Link
+  } from "react-router-dom";
 import styled from 'styled-components'
 
 function Header() {
     return (
         <Nav>
+            <Link to="/Home">  
             <Logo src="/images/logo.svg"/>
+            </Link>
             <NavMenu>
                
             </NavMenu>
-            <span>Log In</span><p>&nbsp; / &nbsp;</p>
+            <Link to="/UserLogedIn">  
+            <span>Log In</span>
+            </Link>
+            <p>&nbsp; / &nbsp;</p>
+            <Link to="/Resigtration">
             <span> Sing Up</span>
+            </Link>
         </Nav>
     )
 }
@@ -49,6 +58,11 @@ const Nav = styled.nav `
             transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94)0s;
             transform:scaleX(0);
                 }
+            }
+            a{
+                text-decoration: none;
+                color: Black;
+                font-weight: 700;
             }
 `
 

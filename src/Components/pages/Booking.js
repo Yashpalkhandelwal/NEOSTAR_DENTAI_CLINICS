@@ -62,19 +62,19 @@ function Booking() {
                 </ProblemFisrt>
                 <ProblemSecond>
                     <ProblemOne>
-                    Problem 5<input type="checkbox"/>
+                   <input type="checkbox"/>Problem 5
                         
                     </ProblemOne>
                     <ProblemTwo>
-                    Problem 6<input type="checkbox"/>
+                    <input type="checkbox"/>Problem 6
                        
                     </ProblemTwo>
                     <ProblemThree>
-                    Problem 7<input type="checkbox"/>
+                    <input type="checkbox"/>Problem 7
                        
                     </ProblemThree>
                     <ProblemFoure>
-                    Problem 8<input type="checkbox"/>
+                    <input type="checkbox"/>Problem 8
                        
                     </ProblemFoure>
                 </ProblemSecond>
