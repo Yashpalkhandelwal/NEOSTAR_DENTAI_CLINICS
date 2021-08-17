@@ -7,13 +7,13 @@ import styled from 'styled-components'
 function Header() {
     return (
         <Nav>
-            <Link to="/Home">  
+            <Link to="/">  
             <Logo src="/images/logo.svg"/>
             </Link>
             <NavMenu>
                
             </NavMenu>
-            <Link to="/UserLogedIn">  
+            <Link to="/Login">  
             <span>Log In</span>
             </Link>
             <p>&nbsp; / &nbsp;</p>

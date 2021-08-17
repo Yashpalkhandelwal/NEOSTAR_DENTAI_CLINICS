@@ -19,8 +19,10 @@ function BookingBottomNav() {
                 |
                 </Divide>
                 <Discard>
+                <Link to="/"> 
                 <img src="https://www.figma.com/file/TYMBLtZWY3mKDvr1blAToK/neostar-platform?node-id=5%3A1742"/>
                 <label>Discard</label>
+                </Link>
                 </Discard>
 
             </NavBar>
@@ -74,5 +76,8 @@ img{
     padding-right:10px;
     margin: 15px 0px 0 30px;        
 }
-    
+a{
+    text-decoration: none;
+    color: White;
+}
 `
