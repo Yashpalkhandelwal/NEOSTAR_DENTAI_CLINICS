@@ -1,7 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 import {DatePickerComponent} from '@syncfusion/ej2-react-calendars';
-import ResigtrationBottomNavBar from '../ResigtrationBottomNavBar'
+import {     
+    Link
+  } from "react-router-dom";
+
 
 function Resigtration() {
     const dateValue = new Date("02/05/2021 10:30 AM");
@@ -94,7 +97,24 @@ function Resigtration() {
                 </Problem>
             </Form>
 
-            <ResigtrationBottomNavBar/>
+            <NavBar>
+                <Save>
+                <Link to="/UserLogedIn">   
+                <img src="https://www.figma.com/file/TYMBLtZWY3mKDvr1blAToK/neostar-platform?node-id=5%3A1721"/>
+                <label>Save</label>
+                </Link>
+                </Save>
+                <Divide>
+                |
+                </Divide>
+                <Discard>
+                <Link to="/"> 
+                <img src="https://www.figma.com/file/TYMBLtZWY3mKDvr1blAToK/neostar-platform?node-id=5%3A1742"/>
+                <label>Discard</label>
+                </Link>
+                </Discard>
+
+            </NavBar>
         </>
     )
 }
@@ -120,8 +140,8 @@ const Form = styled.div`
         border: none;    
         height: 53px;            
         width: 319px;
-        border:1px solid #eaeaea;
-        border-radius: 5px;
+        border:0px solid #eaeaea;
+        border-radius: 12px;
         outline:none;       
         
         &:focus{
@@ -274,3 +294,39 @@ const ProblemFoure = styled.div`
     width:20px;
 }
 ` 
+
+
+const NavBar = styled.div`
+bottom: 0;    
+font-weight: 700;
+color: white;
+font-size: 22px;
+text-align: center;
+border-radius: 30px 30px 0px 0px;
+height: 59px;
+overflow: hidden;
+background-color: #048B90;
+position: sticky;     
+display: flex;
+justify-content:space-evenly ;
+padding-top:10px;
+img{
+    padding-right:10px;
+      
+}
+a{
+    text-decoration: none;
+    color: White;
+}
+`
+const Save = styled.div`
+    
+    
+`
+const Divide = styled.div`
+
+`
+const Discard = styled.div`
+
+`
+

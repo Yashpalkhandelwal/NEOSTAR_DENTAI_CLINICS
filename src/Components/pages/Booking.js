@@ -1,7 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import {DateTimePickerComponent} from '@syncfusion/ej2-react-calendars';
-import BookingBottomNav from '../BookingBottomNav'
+import {     
+    Link
+  } from "react-router-dom";
 
 function Booking() {
     const dateValue = new Date("02/05/2021 10:30 AM");
@@ -88,8 +90,24 @@ function Booking() {
             </Tearmsandcondition>
             </form>
 
-            <BookingBottomNav/>
+            <NavBar>
+                <ConfirmBooking>
+                <Link to="/resigtration">   
+                <img src="https://www.figma.com/file/TYMBLtZWY3mKDvr1blAToK/neostar-platform?node-id=5%3A1721"/>
+                <label>Confirm Booking</label>
+                </Link>
+                </ConfirmBooking>
+                <Divide>
+                |
+                </Divide>
+                <Cancel>
+                <Link to="/"> 
+                <img src="https://www.figma.com/file/TYMBLtZWY3mKDvr1blAToK/neostar-platform?node-id=5%3A1742"/>
+                <label>Cancel</label>
+                </Link>
+                </Cancel>
 
+            </NavBar>
             </div>
     )
 }
@@ -219,4 +237,38 @@ const Tearmsandcondition = styled.div`
     input{
        margin-left:5px;
     }
+`
+
+const NavBar = styled.div`
+bottom: 0;    
+font-weight: 700;
+color: white;
+font-size: 22px;
+text-align: center;
+border-radius: 30px 30px 0px 0px;
+height: 59px;
+overflow: hidden;
+background-color: #048B90;
+position: sticky;     
+display: flex;
+justify-content:space-evenly ;
+padding-top:10px;
+img{
+    padding-right:10px;
+      
+}
+a{
+    text-decoration: none;
+    color: White;
+}
+`
+const ConfirmBooking = styled.div`
+    
+
+`
+const Divide = styled.div`
+
+`
+const Cancel = styled.div`
+
 `
