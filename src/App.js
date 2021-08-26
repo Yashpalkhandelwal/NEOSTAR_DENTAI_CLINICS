@@ -6,12 +6,14 @@ import {
   
 } from "react-router-dom";
 
-import Header from './Components/Header';
-import Home from './Components/pages/Home'
-import Booking from './Components/pages/Booking'
-import Resigtration from './Components/pages/Resigtration'
-import Login from './Components/pages/Login'
-import UserLogedIn from './Components/pages/UserLogedIn'
+
+// USER
+import Header from './User//Components/Header';
+import Home from './User/Components/pages/Home'
+import Booking from './User/Components/pages/Booking'
+import Resigtration from './User/Components/pages/Resigtration'
+import Login from './User/Components/pages/Login'
+import UserLogedIn from './User/Components/pages/UserLogedIn'
 
 
 
