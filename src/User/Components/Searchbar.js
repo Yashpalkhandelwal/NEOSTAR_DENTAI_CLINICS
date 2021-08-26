@@ -53,7 +53,7 @@ const SearchTab = styled.div`
 `
 
 const Button = styled.button`
-    margin-left: 10px;    
+    margin-top: 15px;    
     background-color: #048B90;
     padding:6px;
     border: 1px soild ;
