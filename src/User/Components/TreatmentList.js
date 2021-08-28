@@ -5,28 +5,29 @@ function TreatmentList() {
     return (
         <div>
              <ServicesBoard>
+                 <H1>Know Your Treatment</H1>
             <ServicesBoardUpper>
                 <ServicesOne>
-                <ServicesTitle>DENTAL HEALTH RISK</ServicesTitle>
+                <ServicesTitle>Invisalign</ServicesTitle>
                 </ServicesOne>
                 <ServicesTwo>
-                <ServicesTitle>KNOW TREATMENT</ServicesTitle>
+                <ServicesTitle>Dental Implant</ServicesTitle>
                 </ServicesTwo>
                 </ServicesBoardUpper>
                 <ServicesBoardBottom>
                 <ServicesThree>
-                <ServicesTitle>DENTAL HYGENIE</ServicesTitle>
+                <ServicesTitle>Fixed Dentures</ServicesTitle>
                 </ServicesThree>
                 <ServicesFour>
-                <ServicesTitle>FIND US NEAR YOU</ServicesTitle>
+                <ServicesTitle>Veeners</ServicesTitle>
                 </ServicesFour>
                 </ServicesBoardBottom>
                 <ServicesBoardUpper>
                 <ServicesOne>
-                <ServicesTitle>DENTAL HEALTH RISK</ServicesTitle>
+                <ServicesTitle>Teeth Whitening</ServicesTitle>
                 </ServicesOne>
                 <ServicesTwo>
-                <ServicesTitle>DENTAL HEALTH RISK</ServicesTitle>
+                <ServicesTitle>Painless Root Canals</ServicesTitle>
                 </ServicesTwo>
                 </ServicesBoardUpper>
 
@@ -37,36 +38,43 @@ function TreatmentList() {
 
 export default TreatmentList
 
+const H1 = styled.h1`
+    font-size: 20px;    
+    color: Black;   
+`
+
 const ServicesBoard = styled.div`
     margin:2px 0 30px 0;    
     padding:10px;
 `
 const ServicesBoardUpper = styled.div`
     display:flex;    
-    justify-content: space-between; 
-    margin-top:30px; 
+    justify-content: center; 
+    margin-top:20px;
+    
+    
     
 
 `
 const ServicesBoardBottom= styled.div`
     display:flex;    
-    justify-content: space-between;
-    margin-top:30px;
+    justify-content: center;
+    margin-top:20px;
 
 `
 const ServicesTitle = styled.div`
-position: absolute;
-  bottom: 0;
+    position: absolute;   
     border: 1px solid #048B90 ;
     background: #048B90;
-    border-radius: 0 0 30px 30px ;
-    width:180px;
-    height:33px;
-    padding-top:5px;
-    font-size:12px;
+    border-radius:50%;
+    width:20px;
+    height:20px;
+    margin:50px 0 0 10px;    
+    font-size:18px;
     color: White;
     font-weight:700;
     text-align: center; 
+    
                    
          
     `
@@ -78,9 +86,10 @@ const ServicesOne = styled.div`
     background-image: url("user_images/Home_Silder/3.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 30px;
+    border-radius: 11px;
     width:180px;
     height:140px;
+    margin-right:20px;
 `
 const ServicesTwo = styled.div`
     position: relative;
@@ -89,9 +98,10 @@ const ServicesTwo = styled.div`
     background-image: url("user_images/Home_Silder/2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 30px;
+    border-radius: 11px;
     width:180px;
     height:140px;
+    
     `
 const ServicesThree = styled.div`
     position: relative;
@@ -100,9 +110,10 @@ const ServicesThree = styled.div`
     background-image: url("user_images/Home_Silder/4.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 30px;
+    border-radius: 11px;
     width:180px;
-    height:140px;`
+    height:140px;
+    margin-right:20px;`
 const ServicesFour = styled.div`
     position: relative;
     border: 1px solid #FFF8F2 ;
@@ -110,6 +121,6 @@ const ServicesFour = styled.div`
     background-image: url("user_images/Home_Silder/5.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 30px;
+    border-radius: 11px;
     width:180px;
     height:140px;`
