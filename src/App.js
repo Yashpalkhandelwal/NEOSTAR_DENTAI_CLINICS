@@ -14,6 +14,7 @@ import Booking from './User/Components/pages/Booking'
 import Resigtration from './User/Components/pages/Resigtration'
 import Login from './User/Components/pages/Login'
 import UserLogedIn from './User/Components/pages/UserLogedIn'
+import PatientProfile from './User/Components/pages/PatientProfile'
 
 
 
@@ -23,6 +24,11 @@ function App() {
     <div className="App">
     <Header/>  
     <Switch>
+
+    <Route path="/PatientProfile">
+        <PatientProfile />
+      </Route>
+
 
     <Route path="/UserLogedIn">
         <UserLogedIn />

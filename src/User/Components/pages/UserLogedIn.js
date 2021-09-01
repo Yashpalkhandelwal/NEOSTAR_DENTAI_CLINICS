@@ -1,5 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
+import {     
+    Link
+  } from "react-router-dom";
+
 
 import Navfooter from '../Navfooter';
 
@@ -12,10 +16,14 @@ function UserLogedIn() {
             </Greeting>
 
             <Users>
+            <Link to="/PatientProfile">   
             <select name="Current">
+               
                         <option value="User1">User 1</option>
+              
                         <option value="User2">User 2</option>                       
                 </select>
+                </Link>
             </Users>
 
             <NoticeBoard>
